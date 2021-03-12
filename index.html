@@ -11,23 +11,39 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/style.css" />
+    <script src="./src/active.js" defer></script>
   </head>
   <body>
+    <div class="backdrop"></div>
     <header class="header">
       <div class="brand">
         <a href="./index.html">
           <h1>PHOTOSTAT</h1>
         </a>
       </div>
-      <nav class="menu">
+      <nav class="menu menu__header">
         <ul>
           <li><a href="./story.html">STORIES</a></li>
           <li><a href="./pricing.html">PRICING</a></li>
           <li><a href="./featuring.html">FEATURING</a></li>
         </ul>
       </nav>
-      <div class="action"><button class="btn">GET STARTED</button></div>
+      <div class="action">
+        <button class="btn btn__header">GET STARTED</button>
+      </div>
+      <div class="burger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </header>
+    <nav class="menu__phone">
+      <ul>
+        <li><a href="./story.html">STORIES</a></li>
+        <li><a href="./pricing.html">PRICING</a></li>
+        <li><a href="./featuring.html">FEATURING</a></li>
+      </ul>
+    </nav>
     <main class="main">
       <section class="presentation">
         <div class="stories stories-01">
