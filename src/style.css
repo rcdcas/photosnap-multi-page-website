@@ -51,7 +51,7 @@ a {
   display: block;
 }
 
-.backdrop--click {
+.backdrop--opacity {
   opacity: 1;
 }
 
@@ -114,18 +114,32 @@ a {
 }
 
 .burger {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
   height: 21px;
+  cursor: pointer;
 }
 
 .burger .bar {
   height: 3px;
   width: 100%;
-  background-color: #131313;
+  background-color: #333333;
   border-radius: 10px;
+  transition: background-color 500ms, transform 300ms, opacity 300ms;
+}
+
+.burger--pop .bar2 {
+  opacity: 0;
+}
+
+.burger--pop .bar1 {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.burger--pop .bar3 {
+  transform: rotate(45deg) translate(-6px, -6px);
 }
 
 .menu__phone {
